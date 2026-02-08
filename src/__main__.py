@@ -13,13 +13,13 @@ class App:
         pg.init()
         pass
 
-    def run() -> None:
+    def run(self) -> None:
         pass
 
-    def update() -> None:
+    def update(self) -> None:
         pass
 
-    def _handle_events() -> None:
+    def _handle_events(self) -> None:
         pass
 
 
