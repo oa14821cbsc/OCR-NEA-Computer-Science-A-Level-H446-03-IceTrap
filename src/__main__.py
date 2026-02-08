@@ -2,7 +2,7 @@
 This module is the entrypoint to the program!
 """
 import pygame as pg
-
+from src.config.config_file import SCREEN_WIDTH, SCREEN_HEIGHT
 
 class App:
     """
@@ -11,7 +11,7 @@ class App:
 
     def __init__(self) -> None:
         pg.init()
-        pass
+        pg.display.set_mode(SCREEN_WIDTH, SCREEN_HEIGHT)
 
     def run(self) -> None:
         pass
