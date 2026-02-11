@@ -1,2 +1,2 @@
 # OCR-NEA-Computer-Science-A-Level-H446-03-IceTrap
-Repository used to storing the code for my coded solution externally from my computer, IceTrap.
+Repository used to storing the code, alongside iterative and post-development testing videos, for my coded solution externally within a remote repositiory stored within GitHub.
