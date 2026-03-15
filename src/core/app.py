@@ -1,6 +1,7 @@
 import pygame as pg
 
 from settings import *
+from .scene_manager import GameSceneManager
 from typing import Dict
 
 class App:
@@ -10,6 +11,7 @@ class App:
         self.is_running: bool = True
         self.clock = pg.time.Clock()
         self.states: Dict[str, object] = {}
+        self.game_scene_manager = GameSceneManager("Test Scene")
 
     def run(self) -> None:
         while self.is_running:
