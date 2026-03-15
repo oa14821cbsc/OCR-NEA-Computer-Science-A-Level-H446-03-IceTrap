@@ -1,6 +1,7 @@
 import pygame as pg
 
 from settings import *
+from scenes import *
 from .scene_manager import GameSceneManager
 from typing import Dict
 
@@ -10,14 +11,17 @@ class App:
         self.display = pg.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
         self.is_running: bool = True
         self.clock = pg.time.Clock()
-        self.states: Dict[str, object] = {}
-        self.game_scene_manager = GameSceneManager("Test Scene")
-        self.game_scene_manager.set_state("Hello World")
-        print(self.game_scene_manager.get_scene())
+        self.time = 0
+        self.delta_time = 0
+
+        self.title_screen = TitleScreen()
+        self.states: Dict[str, object] = {"title_screen": self.title_screen}
+        self.game_scene_manager = GameSceneManager("title_screen")
 
     def run(self) -> None:
         while self.is_running:
             self._handle_events()
+            self._run_state()
             self._update()
             self._render()
 
@@ -36,3 +40,6 @@ class App:
             elif event.type == pg.KEYDOWN:
                 if event.key == pg.K_ESCAPE:
                     self.is_running = False
+    
+    def _run_state(self) -> None:
+        self.states[self.game_scene_manager.get_scene()].run()
