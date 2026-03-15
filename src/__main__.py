@@ -16,6 +16,6 @@ class App:
         self.states: Dict[str, object]
 
     def run(self) -> None:
-        pass
+        self.time = pg.clock.tick(FPS)
 
 app = App()
