@@ -12,6 +12,8 @@ class App:
         self.clock = pg.time.Clock()
         self.states: Dict[str, object] = {}
         self.game_scene_manager = GameSceneManager("Test Scene")
+        self.game_scene_manager.set_state("Hello World")
+        print(self.game_scene_manager.get_scene())
 
     def run(self) -> None:
         while self.is_running:
