@@ -20,7 +20,7 @@ class App:
             self._render()
 
     def _update(self) -> None:
-        self.delta_time = self.clock.tick(FPS)
+        self.delta_time = self.clock.tick()
         self.time = pg.time.get_ticks() * 0.001
     
     def _render(self) -> None:
