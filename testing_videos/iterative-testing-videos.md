@@ -100,6 +100,26 @@ https://github.com/user-attachments/assets/b7b7815f-3fc2-405b-9aca-bfa58d613d5f
 
 ## Milestone 4 - Developing the Game Scene Manager
 
+### Test 024 - Creating Game Scene Manager Class (SUCCESSFUL)
+
+https://github.com/user-attachments/assets/7ea8d27d-6155-44c9-85f1-820cdc7705b4
+
+### Test 025 - Creating Game Scene Manager Object (FAILED)
+
+https://github.com/user-attachments/assets/415bbcb1-c36e-40d1-b748-d6cf75da7b06
+
+### Test 026 - Creating Game Scene Manager Object (SUCCESSFUL; REMEDIAL ACTION FROM TEST 025)
+
+https://github.com/user-attachments/assets/4a0fe668-3ddc-4739-9d3c-a0f0049b5b60
+
+### Test 027 - Creating Current State Attribute (SUCCESSFUL)
+
+https://github.com/user-attachments/assets/d3b1182f-2630-4b6d-85d8-9ca9af273055
+
+### Test 028 - Creating Current State Attribute (SUCCESSFUL)
+
+https://github.com/user-attachments/assets/f143b512-9947-43c7-9c6b-2de525661b76
+
 
 
 
