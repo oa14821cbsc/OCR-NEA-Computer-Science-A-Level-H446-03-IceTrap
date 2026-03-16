@@ -17,7 +17,7 @@ class Button:
         self.clicked = False
 
     def set_position(self, x, y):
-        self.position_data = (x, y)
+        self.rect.topleft = (x, y)
     
     def set_size(self, w, h):
         self.width = w
