@@ -170,7 +170,7 @@ https://github.com/user-attachments/assets/fe20bd0a-5c02-4104-89fb-f2b2607e325e
 
 ### Test 042 - Render Quit Button (FAILED)
 
-### Test 043 - Render Quit Button (SUCCESSFULl; REMEDIAL ACTION FROM TEST 042)
+### Test 043 - Render Quit Button (SUCCESSFUL; REMEDIAL ACTION FROM TEST 042)
 
 
 
