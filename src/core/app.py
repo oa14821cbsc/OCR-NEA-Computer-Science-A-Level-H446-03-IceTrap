@@ -24,6 +24,7 @@ class App:
             self._run_state()
             self._update()
             self._render()
+        pg.quit()
 
     def _update(self) -> None:
         self.delta_time = self.clock.tick()
