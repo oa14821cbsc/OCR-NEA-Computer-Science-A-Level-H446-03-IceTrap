@@ -21,28 +21,26 @@ class App:
         self.states: Dict[str, object] = {"title_screen": self.title_screen}
 
     def run(self) -> None:
-        while self.is_running:
+        while self.is_running and not self.game_scene_manager.exit_game:
             self._handle_events()
-            self._run_state()
             self._update()
-            self._render()
+            self._run_state()
         pg.quit()
 
     def _update(self) -> None:
         self.delta_time = self.clock.tick()
         self.time = pg.time.get_ticks() * 0.001
-    
-    def _render(self) -> None:
-        self.display.fill(BACKGROUND_COLOUR)
-        pg.display.flip()
 
     def _handle_events(self) -> None:
         for event in pg.event.get():
             if event.type == pg.QUIT:
                 self.is_running = False
+                self.game_scene_manager.exit_game = True
             elif event.type == pg.KEYDOWN:
                 if event.key == pg.K_ESCAPE:
                     self.is_running = False
+                    self.game_scene_manager.exit_game = True
     
     def _run_state(self) -> None:
-        self.states[self.game_scene_manager.get_scene()].run()
+        current_scene = self.states[self.game_scene_manager.get_scene()]
+        current_scene.run()        
