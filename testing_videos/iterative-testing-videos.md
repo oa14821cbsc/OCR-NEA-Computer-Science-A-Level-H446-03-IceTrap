@@ -164,7 +164,11 @@ https://github.com/user-attachments/assets/fe20bd0a-5c02-4104-89fb-f2b2607e325e
 
 ### Test 039 - Initalise Title Screen Object (SUCCESSFUL; REMEDIAL ACTION FROM TEST 036)
 
-### Test 040 - 
+### Test 040 - Create Quit Button (FAILED)
+
+### Test 041 - Create Quit Button (SUCCESSFUL; REMEDIAL ACTION FROM TEST 040)
+
+### Test 042 - Render Quit Button ()
 
 
 
