@@ -156,7 +156,13 @@ https://github.com/user-attachments/assets/ab7ddc7f-eb33-4013-be01-1b38beb6f106
 
 https://github.com/user-attachments/assets/fe20bd0a-5c02-4104-89fb-f2b2607e325e
 
+### Test 036 - Initalise Title Screen Object (FAILED)
 
+### Test 037 - Initalise Title Screen Object (FAILED; REMEDIAL ACTION FROM TEST 036)
+
+### Test 038 - Initalise Title Screen Object (FAILED; REMEDIAL ACTION FROM TEST 036)
+
+### Test 039 - Initalise Title Screen Object (FAILED; REMEDIAL ACTION FROM TEST 036)
 
 
 
