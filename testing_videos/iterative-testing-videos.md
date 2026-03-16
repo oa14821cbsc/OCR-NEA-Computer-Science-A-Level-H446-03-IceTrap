@@ -190,9 +190,15 @@ https://github.com/user-attachments/assets/e26306b2-2e7e-444d-b316-a90b150c73b3
 
 ### Test 044 - Create Font Object (FAILED)
 
+https://github.com/user-attachments/assets/b69660f0-10f3-4edc-8f69-858e0a133828
+
 ### Test 045 - Create Font Object (SUCCESSFUL; REMEDIAL ACTION FROM TEST 044)
 
+https://github.com/user-attachments/assets/342de64e-a2c0-483b-b117-329bfbf80cf2
+
 ## Test 046 - Render Title (SUCCESSFUL)
+
+https://github.com/user-attachments/assets/25ad3d7f-5a59-4ae8-a811-5bbf7f169a20
 
 
 
