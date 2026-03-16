@@ -1,4 +1,5 @@
 import pygame as pg
+import sys
 
 from settings import *
 from scenes import *
@@ -9,6 +10,7 @@ class App:
     def __init__(self) -> None:
         pg.init()
         self.display = pg.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+        pg.display.set_caption("IceTrap")
         self.is_running: bool = True
         self.clock = pg.time.Clock()
         self.time = 0
@@ -26,6 +28,7 @@ class App:
             self._update()
             self._run_state()
         pg.quit()
+        sys.exit()
 
     def _update(self) -> None:
         self.delta_time = self.clock.tick()

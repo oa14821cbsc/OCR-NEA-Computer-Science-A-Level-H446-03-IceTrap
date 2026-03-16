@@ -2,7 +2,7 @@ import pygame as pg
 
 from core.base_scene import BaseScene
 from core.gui import Button
-from settings import BACKGROUND_COLOUR
+from settings import *
 
 class TitleScreen(BaseScene):
     def __init__(self, display, game_scene_manager):
@@ -15,12 +15,17 @@ class TitleScreen(BaseScene):
                                   self.quit_button_image, 
                                   self.quit_button_hover_image, 
                                   0.66)
+        self.font = pg.font.Font("assets/fonts/sitka-small-599.ttf", 150)
+        self.title = self.font.render("IceTrap", False, (255, 255, 255))
+        self.title_rect = self.title.get_rect(center=(SCREEN_WIDTH // 2, 200))
+
     def run(self):
         self._handle_events()
         self._draw()
 
     def _draw(self):
         self.display.fill(BACKGROUND_COLOUR)
+        self.display.blit(self.title, self.title_rect)
         self.quit_button.on_hover()
         self.quit_button.draw()
         pg.display.flip()

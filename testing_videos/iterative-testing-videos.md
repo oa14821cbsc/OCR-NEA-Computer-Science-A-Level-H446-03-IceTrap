@@ -172,5 +172,13 @@ https://github.com/user-attachments/assets/fe20bd0a-5c02-4104-89fb-f2b2607e325e
 
 ### Test 043 - Render Quit Button (SUCCESSFUL; REMEDIAL ACTION FROM TEST 042)
 
+## Milestone 9 - Developing the Title 
+
+### Test 044 - Create Font Object (FAILED)
+
+### Test 045 - Create Font Object (SUCCESSFUL; REMEDIAL ACTION FROM TEST 044)
+
+## Test 046 - Render Title
+
 
 
