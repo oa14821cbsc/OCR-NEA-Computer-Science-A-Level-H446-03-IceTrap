@@ -14,7 +14,7 @@ class TitleScreen(BaseScene):
                                   0, 
                                   self.quit_button_image, 
                                   self.quit_button_hover_image, 
-                                  1)
+                                  0.66)
     def run(self):
         self._handle_events()
         self._draw()
