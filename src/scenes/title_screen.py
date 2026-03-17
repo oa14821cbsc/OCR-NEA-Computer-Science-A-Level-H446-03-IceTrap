@@ -16,7 +16,7 @@ class TitleScreen(BaseScene):
                                   self.quit_button_hover_image, 
                                   0.66)
         self.font = pg.font.Font("assets/fonts/sitka-small-599.ttf", 150)
-        self.title = self.font.render("IceTrap", False, (255, 255, 255))
+        self.title = self.font.render("IceTrap", True, (255, 255, 255))
         self.title_rect = self.title.get_rect(center=(SCREEN_WIDTH // 2, 200))
 
     def run(self):

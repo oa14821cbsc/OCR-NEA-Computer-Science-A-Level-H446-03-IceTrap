@@ -186,6 +186,8 @@ https://github.com/user-attachments/assets/e26306b2-2e7e-444d-b316-a90b150c73b3
 
 ### Test 043 - Render Quit Button (SUCCESSFUL; REMEDIAL ACTION FROM TEST 042)
 
+
+
 ## Milestone 9 - Developing the Title 
 
 ### Test 044 - Create Font Object (FAILED)
@@ -200,5 +202,5 @@ https://github.com/user-attachments/assets/342de64e-a2c0-483b-b117-329bfbf80cf2
 
 https://github.com/user-attachments/assets/25ad3d7f-5a59-4ae8-a811-5bbf7f169a20
 
-
+## Milestone 10 - Developing the Click to Play Feature
 
