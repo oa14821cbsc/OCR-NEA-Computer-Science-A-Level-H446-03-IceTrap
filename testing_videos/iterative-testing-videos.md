@@ -186,7 +186,7 @@ https://github.com/user-attachments/assets/e26306b2-2e7e-444d-b316-a90b150c73b3
 
 ### Test 043 - Render Quit Button (SUCCESSFUL; REMEDIAL ACTION FROM TEST 042)
 
-
+https://github.com/user-attachments/assets/bbe5ad1c-c0dd-4e04-8a88-c0ef00020f80
 
 ## Milestone 9 - Developing the Title 
 
