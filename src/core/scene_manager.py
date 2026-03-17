@@ -10,7 +10,7 @@ class GameSceneManager:
     def get_previous_scene(self):
         return self.previous_scene
     
-    def set_state(self, scene):
+    def set_scene(self, scene):
         self.previous_scene = self.current_scene
         self.current_scene = scene
 

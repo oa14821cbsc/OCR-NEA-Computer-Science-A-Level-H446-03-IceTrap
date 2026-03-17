@@ -204,3 +204,13 @@ https://github.com/user-attachments/assets/25ad3d7f-5a59-4ae8-a811-5bbf7f169a20
 
 ## Milestone 10 - Developing the Click to Play Feature
 
+## Test 047 - Create Text Prompt (SUCCESS)
+
+## Test 048 - Render Text Prompt (SUCCESS)
+
+## Test 049 - Test Input 1 (Milestone 10) (SUCCESS)
+
+## Test 050 - Test Input 2 (Milestone 10) (SUCCESS)
+
+## Milestone 11 - Developing the Main Menu
+
