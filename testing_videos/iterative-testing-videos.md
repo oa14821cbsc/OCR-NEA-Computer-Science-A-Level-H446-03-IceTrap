@@ -204,21 +204,30 @@ https://github.com/user-attachments/assets/25ad3d7f-5a59-4ae8-a811-5bbf7f169a20
 
 ## Milestone 10 - Developing the Click to Play Feature
 
-## Test 047 - Create Text Prompt (SUCCESS)
+## Test 047 - Create Text Prompt (SUCCESSFUL)
 
 https://github.com/user-attachments/assets/5626c677-94a1-4fe1-a8dc-74a98bd7c684
 
-## Test 048 - Render Text Prompt (SUCCESS)
+## Test 048 - Render Text Prompt (SUCCESSFUL)
 
 https://github.com/user-attachments/assets/420b8bcb-dde9-4d84-99ca-99e19cccc14b
 
-## Test 049 - Test Input 1 (Milestone 10) (SUCCESS)
+## Test 049 - Test Input 1 (Milestone 10) (SUCCESSFUL)
 
 https://github.com/user-attachments/assets/7ee7c5b6-c23c-454c-bdce-351ac8d94bf0
 
-## Test 050 - Test Input 2 (Milestone 10) (SUCCESS)
+## Test 050 - Test Input 2 (Milestone 10) (SUCCESSFUL)
 
 https://github.com/user-attachments/assets/50ce32af-3f16-4339-9297-a3a73bb34f2d
 
 ## Milestone 11 - Developing the Main Menu
 
+## Test 051 - Render Play Button (SUCCESSFUL)
+
+## Test 052 - Render Settings Button (SUCCESSFUL)
+
+## Test 053 - Render Leaderboard Button (SUCCESSFUL)
+
+## Test 054 - Render Quit Button (SUCCESSFUL)
+
+## Milestone 12 - Developing the Settings
