@@ -20,8 +20,16 @@ class App:
 
         self.title_screen = TitleScreen(self.display, self.game_scene_manager)
         self.main_menu = MainMenu(self.display, self.game_scene_manager)
+        self.settings = Settings(self.display, self.game_scene_manager)
+        self.leaderboard = Leaderboard(self.display, self.game_scene_manager)
+        self.level = Level(self.display, self.game_scene_manager)
+        
 
-        self.states: Dict[str, object] = {"title_screen": self.title_screen, "main_menu": self.main_menu}
+        self.states: Dict[str, object] = {"title_screen": self.title_screen, 
+                                          "main_menu": self.main_menu,
+                                          "settings": self.settings,
+                                          "leaderboard": self.leaderboard, 
+                                          "level": self.level}
 
     def run(self) -> None:
         while self.is_running and not self.game_scene_manager.exit_game:
