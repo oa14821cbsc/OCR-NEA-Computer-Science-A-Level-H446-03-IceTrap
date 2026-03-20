@@ -224,10 +224,18 @@ https://github.com/user-attachments/assets/50ce32af-3f16-4339-9297-a3a73bb34f2d
 
 ## Test 051 - Render Play Button (SUCCESSFUL)
 
+https://github.com/user-attachments/assets/222671f4-ecb5-4f66-a3fb-286b5b139e65
+
 ## Test 052 - Render Settings Button (SUCCESSFUL)
+
+https://github.com/user-attachments/assets/a0337d92-f9b2-41c2-bf13-f830284613d7
 
 ## Test 053 - Render Leaderboard Button (SUCCESSFUL)
 
+https://github.com/user-attachments/assets/58df5a39-b32f-45a0-b928-39b26885309f
+
 ## Test 054 - Render Quit Button (SUCCESSFUL)
+
+https://github.com/user-attachments/assets/3fa79f8b-9f99-4ac5-aeda-e2c4e587655d
 
 ## Milestone 12 - Developing the Settings
