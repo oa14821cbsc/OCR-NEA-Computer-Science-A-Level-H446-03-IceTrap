@@ -39,7 +39,7 @@ class MainMenu(BaseScene):
                                   0.66)
         self.leaderboard_button = Button(display, 
                                   365, 
-                                  520, 
+                                  501, 
                                   self.leaderboard_button_image, 
                                   self.leaderboard_button_hover_image, 
                                   0.66)
