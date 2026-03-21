@@ -15,6 +15,7 @@ class App:
         self.clock = pg.time.Clock()
         self.time = 0
         self.delta_time = 0
+        self.events = None
 
         self.game_scene_manager = GameSceneManager("title_screen")
 
@@ -35,7 +36,6 @@ class App:
         while self.is_running and not self.game_scene_manager.exit_game:
             self._handle_events()
             self._update()
-            self._run_state()
         pg.quit()
         sys.exit()
 
@@ -44,7 +44,8 @@ class App:
         self.time = pg.time.get_ticks() * 0.001
 
     def _handle_events(self) -> None:
-        for event in pg.event.get():
+        events = pg.event.get()
+        for event in events:
             if event.type == pg.QUIT:
                 self.is_running = False
                 self.game_scene_manager.exit_game = True
@@ -52,7 +53,7 @@ class App:
                 if event.key == pg.K_ESCAPE:
                     self.is_running = False
                     self.game_scene_manager.exit_game = True
-    
-    def _run_state(self) -> None:
+        self.events = events
+
         current_scene = self.states[self.game_scene_manager.get_scene()]
-        current_scene.run()        
+        current_scene.run(self.events)        

@@ -10,8 +10,8 @@ class Level(BaseScene):
         self.placeholder = self.font.render("Placeholder Level", True, (255, 255, 255))
         self.placeholder_rect = self.placeholder.get_rect(center=(SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2))
     
-    def run(self):
-        self._handle_events()
+    def run(self, events):
+        self._handle_events(events)
         self._draw()
     
     def _draw(self):
@@ -19,5 +19,5 @@ class Level(BaseScene):
         self.display.blit(self.placeholder, self.placeholder_rect)
         pg.display.flip()
 
-    def _handle_events(self):
+    def _handle_events(self, events):
         pass
