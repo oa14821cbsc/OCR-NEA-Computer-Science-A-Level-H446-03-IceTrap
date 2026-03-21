@@ -31,7 +31,7 @@ class Button:
             if pg.mouse.get_pressed()[0] == 1 and not self.clicked:
                 self.clicked = True
                 action = True
-        if pg.mouse.get_pressed()[0] and self.clicked == 0:
+        if pg.mouse.get_pressed()[0] and self.clicked == False:
             self.clicked = False
 
         return action
