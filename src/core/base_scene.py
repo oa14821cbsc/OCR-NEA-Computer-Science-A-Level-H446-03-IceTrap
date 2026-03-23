@@ -6,7 +6,7 @@ class BaseScene(ABC):
         self.game_scene_manager = game_scene_manager
     
     @abstractmethod
-    def run(self):
+    def run(self, events):
         raise NotImplementedError
     
     @abstractmethod
@@ -14,5 +14,5 @@ class BaseScene(ABC):
         raise NotImplementedError
     
     @abstractmethod
-    def _handle_events(self):
+    def _handle_events(self, events):
         raise NotImplementedError

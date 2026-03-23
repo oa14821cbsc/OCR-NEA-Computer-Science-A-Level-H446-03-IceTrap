@@ -23,18 +23,12 @@ class Button:
         self.width = w
         self.height = h
     
-    def is_clicked(self) -> bool:
-        action = False
-        mouse_pos = pg.mouse.get_pos()
-
-        if self.rect.collidepoint(mouse_pos):
-            if pg.mouse.get_pressed()[0] == 1 and not self.clicked:
-                self.clicked = True
-                action = True
-        if pg.mouse.get_pressed()[0] and self.clicked == 0:
-            self.clicked = False
-
-        return action
+    def is_clicked(self, event) -> bool:
+        return (
+        event.type == pg.MOUSEBUTTONDOWN and
+        event.button == 1 and
+        self.rect.collidepoint(event.pos)
+        )
 
     def on_hover(self):
         mouse_pos = pg.mouse.get_pos()

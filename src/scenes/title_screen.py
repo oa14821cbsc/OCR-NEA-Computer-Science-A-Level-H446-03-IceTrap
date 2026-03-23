@@ -24,8 +24,8 @@ class TitleScreen(BaseScene):
                                             (255, 255, 255))
         self.text_prompt_rect = self.text_prompt.get_rect(center=(SCREEN_WIDTH // 2, 500))
 
-    def run(self):
-        self._handle_events()
+    def run(self, events):
+        self._handle_events(events)
         self._draw()
 
     def _draw(self):
@@ -36,9 +36,11 @@ class TitleScreen(BaseScene):
         self.quit_button.draw()
         pg.display.flip()
 
-    def _handle_events(self):
-        if pg.mouse.get_pressed()[0] == 1:
-            self.game_scene_manager.set_scene("main_menu")
+    def _handle_events(self, events):
+        for event in events:
+            if event.type == pg.MOUSEBUTTONDOWN:
+                if event.button == 1:
+                    self.game_scene_manager.set_scene("main_menu")
 
-        if self.quit_button.is_clicked():
-            self.game_scene_manager.exit_game = True
+            if self.quit_button.is_clicked(event):
+               self.game_scene_manager.exit_game = True
