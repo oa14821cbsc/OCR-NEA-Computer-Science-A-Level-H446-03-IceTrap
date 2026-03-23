@@ -44,8 +44,8 @@ class MainMenu(BaseScene):
                                   self.leaderboard_button_hover_image, 
                                   0.66)
     
-    def run(self):
-        self._handle_events()
+    def run(self, events):
+        self._handle_events(events)
         self._draw()
     
     def _draw(self):
@@ -61,12 +61,13 @@ class MainMenu(BaseScene):
         self.leaderboard_button.draw()
         pg.display.flip()
 
-    def _handle_events(self):
-        if self.play_button.is_clicked():
-            self.game_scene_manager.set_scene("level")
-        if self.settings_button.is_clicked():
-            self.game_scene_manager.set_scene("settings")
-        if self.leaderboard_button.is_clicked():
-            self.game_scene_manager.set_scene("leaderboard")
-        if self.quit_button.is_clicked():
-            self.game_scene_manager.exit_game = True
+    def _handle_events(self, events):
+        for event in events:
+            if self.play_button.is_clicked(event):
+                self.game_scene_manager.set_scene("level")
+            if self.settings_button.is_clicked(event):
+                self.game_scene_manager.set_scene("settings")
+            if self.leaderboard_button.is_clicked(event):
+                self.game_scene_manager.set_scene("leaderboard")
+            if self.quit_button.is_clicked(event):
+                self.game_scene_manager.exit_game = True

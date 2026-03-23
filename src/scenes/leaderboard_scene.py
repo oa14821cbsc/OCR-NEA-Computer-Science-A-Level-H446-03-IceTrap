@@ -10,7 +10,7 @@ class Leaderboard(BaseScene):
         self.placeholder = self.font.render("Placeholder Leaderboard", True, (255, 255, 255))
         self.placeholder_rect = self.placeholder.get_rect(center=(SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2))
     
-    def run(self):
+    def run(self, events):
         self._handle_events()
         self._draw()
     
@@ -19,5 +19,5 @@ class Leaderboard(BaseScene):
         self.display.blit(self.placeholder, self.placeholder_rect)
         pg.display.flip()
 
-    def _handle_events(self):
+    def _handle_events(self, events):
         pass
