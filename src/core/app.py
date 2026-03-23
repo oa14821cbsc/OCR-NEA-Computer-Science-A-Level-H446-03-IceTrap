@@ -9,6 +9,7 @@ from typing import Dict
 class App:
     def __init__(self) -> None:
         pg.init()
+        pg.key.set_repeat(400, 40)
         self.display = pg.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
         pg.display.set_caption("IceTrap")
         self.is_running: bool = True
