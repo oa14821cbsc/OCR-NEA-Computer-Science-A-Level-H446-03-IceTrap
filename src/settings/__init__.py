@@ -1,2 +1,2 @@
 from .constants import *
-from .keybinds import *
+from .keybinds import keybinds
