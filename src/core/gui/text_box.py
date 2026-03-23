@@ -32,8 +32,10 @@ class TextBox():
                     raw_text = self.user_text.strip()
                     if raw_text == "":
                         self.warning = "Empty inputs are not allowed!"
+                        self.user_text = ""
                     elif len(raw_text) > 12:
                         self.warning = "Player name is too long!"
+                        self.user_text = ""
                     else:
                         self.saved_text.append(raw_text)
                         print("Saved:", raw_text)
