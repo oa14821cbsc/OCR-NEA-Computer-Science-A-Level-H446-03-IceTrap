@@ -239,3 +239,29 @@ https://github.com/user-attachments/assets/58df5a39-b32f-45a0-b928-39b26885309f
 https://github.com/user-attachments/assets/3fa79f8b-9f99-4ac5-aeda-e2c4e587655d
 
 ## Milestone 12 - Developing the Settings
+
+## Test 055 - Player Name Text Box (SUCCESSFUL)
+
+https://github.com/user-attachments/assets/d2d7f461-5120-475f-9a4d-d93b184bff96
+
+## Test 056 - Keybinds (SUCCESSFUL)
+
+https://github.com/user-attachments/assets/48345548-3a11-4e8b-bcc9-6566a562f5e3
+
+## Test 057 - Saving (SUCCESSFUL)
+
+https://github.com/user-attachments/assets/df60c56c-41cd-41b8-82c2-357971283553
+
+## Milestone 13 - Developing the Leaderboard
+
+## Test 058 - Create Leaderboard Table Object (SUCCESSFUL)
+
+https://github.com/user-attachments/assets/bf62b83d-a697-4c94-b56d-eac6b58751fa
+
+## Test 059 - Appending Multiple Values (FAILED)
+
+https://github.com/user-attachments/assets/a8ee09b6-8105-4b27-a440-6f380ea2558a
+
+## Test 060 - Appending Multiple Values (FAILED; REMEDIAL ACTION FROM TEST 059)
+
+https://github.com/user-attachments/assets/258ccc7c-9602-4bb2-8342-e779ee05c4da
