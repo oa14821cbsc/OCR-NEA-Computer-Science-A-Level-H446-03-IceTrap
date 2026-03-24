@@ -10,7 +10,7 @@ class Settings(BaseScene):
     def __init__(self, display, game_scene_manager):
         super().__init__(display, game_scene_manager)
 
-        default_settings = {
+        self.default_settings = {
             "player_name": "Player",
             "keybinds": {"left": pg.K_a, 
                          "right": pg.K_d, 
@@ -19,7 +19,7 @@ class Settings(BaseScene):
 
         if not os.path.exists("settings.json"):
             with open("settings.json", "w") as f:
-                json.dump(default_settings, f, indent=4)
+                json.dump(self.default_settings, f, indent=4)
 
         self.quit_button_image = pg.image.load("assets/images/quit_button.png").convert_alpha()
         self.quit_button_hover_image = pg.image.load("assets/images/quit_button_hover.png").convert_alpha()

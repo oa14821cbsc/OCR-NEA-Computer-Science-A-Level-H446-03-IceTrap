@@ -1,6 +1,7 @@
 import pygame as pg
 
 from core.base_scene import BaseScene
+from core.leaderboard_table import LeaderboardTable
 from settings import *
 
 class Leaderboard(BaseScene):
@@ -9,9 +10,15 @@ class Leaderboard(BaseScene):
         self.font = pg.font.Font("assets/fonts/sitka-small-599.ttf", 80)
         self.placeholder = self.font.render("Placeholder Leaderboard", True, (255, 255, 255))
         self.placeholder_rect = self.placeholder.get_rect(center=(SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2))
+        self.leaderboard_table = LeaderboardTable()
+        self.leaderboard_table.add_score("Oscar", 12.52)
+        self.leaderboard_table.add_score("", 12.6)
+        scores = self.leaderboard_table.get_top_scores()
+        print(scores)
+    
     
     def run(self, events):
-        self._handle_events()
+        self._handle_events(events)
         self._draw()
     
     def _draw(self):
