@@ -1,3 +1,0 @@
-# Post-Development Testing Videos
-
-Placeholder .md file...
